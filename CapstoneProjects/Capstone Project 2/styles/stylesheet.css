@@ -1,0 +1,477 @@
+
+    /*
+    Colour palette:
+    Yellow    - #FFFF66 0r rgba(255, 255, 102, 1)
+    Orange    - #FC6E22
+    Pink      - #FF1493
+    Purple    - #C24CF6
+    Neon blue - #1F51FF    
+    */
+
+    body {      
+        background-color: black;
+        overflow-x: hidden;
+        min-height: 100vh;
+        display:flex;
+        flex-direction: column;
+      }
+  
+      .container {
+        width: 100%;
+        position: relative;
+        min-height: 100%;
+      }
+  
+      .purple_curve {
+        width:150rem;
+        height: 78rem;
+        left: -1rem;
+        top: -35rem;
+        z-index: -1; 
+        rotate: 30deg;           
+      }
+  
+      .hero-section h1 {
+        font-size: 3em;
+      }
+  
+      .profile-pic {
+        border: 0px #C24CF6 solid;
+        border-radius: 50%;
+        width:30%;
+        box-shadow: 0px 0px 50px 1px #C24CF6;
+        left: 35%;
+      }
+  
+      .hello {
+        top: 45rem;      
+      }
+  
+      .hello h2 {
+        top:20rem;
+      }
+  
+      .introduction {
+        top:23rem;
+        font-size: 1.5em;
+      }
+  
+      .skills {
+        width:100%;
+        top:90rem;
+        display: grid;
+        gap:1%;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 100px 400px 400px 400px;      
+      }
+  
+      .skills p {
+        margin-bottom: 10rem;
+      }
+  
+      .skills h2 {
+        color: #C24CF6;
+        font-size: 2.5rem;
+        padding-left:10%;
+        margin-bottom: 5rem;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+  
+      .Design-Development {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+  
+      .OOP {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+  
+      .Software-Development {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+  
+      .skills h3 {
+        letter-spacing: 0.2rem;
+      }
+  
+      .skills p {
+        letter-spacing: 0.1rem;
+        padding-right:20%;
+        word-wrap: break-word;
+      }
+  
+      .design-image-1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width:70%;
+        border-radius: 5%;
+        padding: 3rem;
+      }
+  
+      .design-image-2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 80%;
+        border-radius: 5%;
+        padding: 3rem;
+      }
+  
+      .design-image-3 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height:80%;
+        border-radius: 5%;
+        padding: 3rem;
+      }
+  
+      .OOP {
+        top: 125.5rem;
+      }
+  
+      .contact {
+        top: 180rem;  
+        padding-bottom: 20rem;
+      }
+  
+      footer {
+        background-color: #1f50ff3a;
+        background-image: linear-gradient(to bottom,#1f50ff4f, #c34cf69a );
+        height: 80px;
+        left: 0;    
+        bottom: 0;
+        position: fixed;
+      }
+  
+      .email-button {
+        background-image: linear-gradient(to bottom, #C24CF6, #1F51FF);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        color: #ffffff;
+        padding: 10px 30px;
+      }
+  
+      .socials {
+        padding-top: 0.5rem;
+      }
+  
+      .socials a {      
+        color: darkgrey;
+        margin: 1rem;
+      }
+  
+      /* SHARED PROPERTY VALUES */
+      body, .hero-section h2, .introduction, .skills p, .copyright, .socials a:hover  {
+        color: white;
+      }
+  
+      .hero-section, .hello h2, .introduction, footer, .contact {
+        text-align: center;
+      }
+  
+      .profile-pic, .hello, .skills, .contact, .purple_curve, .design-image-1, .design-image-2, .design-image-3  {
+        position: absolute;
+      } 
+  
+      .hero-section h1, .hello h2, .contact, .skills h3  {
+        color: #1F51FF;
+      }
+  
+      .hero-section h1, .hello h2, .skills h2, .skills h3, .skills p, .contact {
+        text-shadow: 1px 1px 2px darkgrey;
+      }
+  
+      .hero-section h1, .hello h2, .skills h2, .skills h3, .email-button  {
+        font-family: 'Bree Serif', serif;
+      }
+  
+      .hero-section h1, .skills h2 {
+        letter-spacing: 0.8rem;
+      }
+  
+      .hero-section h2, .introduction {
+        text-shadow: 2px 2px 3px darkgrey;
+      }
+  
+      .hero-section h2, .hello h2 {
+        font-size: 2em;
+      }
+  
+      .hero-section h2, .introduction, .skills p, .contact h3, footer {
+        font-family: 'DM Serif Text', serif;
+      }
+  
+      .headings, .hello {
+        width: 100%;
+        text-align: center;
+      } 
+  
+      .hello h2, .introduction, .contact h3 {
+        position: relative;
+      }
+  
+      .hello h2, .hero-section h2, .introduction {
+        letter-spacing: 0.3rem;
+      }
+  
+      .skills h3, .socials a {
+        font-size: 1.5rem;
+      }
+  
+      .skills p {
+        font-size: 1.5rem;
+      }
+  
+      .Design-Development, .OOP, .Software-Development {
+        margin-bottom: 2rem;
+        padding-left: 1%;
+      }
+  
+      .design-image-2, .design-image-3 {
+        border-radius: 2%;
+      }
+  
+      .contact, footer {
+        width: 100%;
+      }
+  
+      .email-button, .contact {
+        font-size: 2rem;
+      }
+  
+      .copyright {
+        font-size: 0.8rem;
+      }
+  
+      .email-button, .socials a {
+        text-decoration: none;
+      }
+  
+      /* MEDIA QUERIES*/
+  
+      /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 300px) { 
+  
+        .purple_curve {
+          width: 50rem;
+          height: 78rem;
+          left: -1rem;
+          top: -35rem;
+          rotate: 60deg;           
+        }
+  
+        .headings h1 {
+          font-size: 2rem;
+        }
+  
+        .headings h2 {
+          font-size: 1rem;
+          padding: 10px;
+        }
+  
+        .skills h2 {
+          font-size: 2rem;
+        }
+  
+        .design-image-1 {
+          width: 190px;
+          padding:5%;
+        }
+  
+        .design-image-2, .design-image-3 {
+          width: 180px;
+          padding: 5%;
+        }
+  
+        .skills h3 {
+          font-size: 1rem;
+        }
+  
+        .skills p {
+          font-size: 0.8rem;
+        }   
+      }
+  
+      /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+  
+        .purple_curve {
+          width:50rem;
+          height: 78rem;
+          left: -1rem;
+          top: -20rem;
+          rotate: 70deg;           
+        }
+  
+        .headings h1 {
+          font-size: 3.5rem;
+        }
+  
+        .headings h2 {
+          font-size: 2.5rem;
+          padding: 10px 30px;
+        }
+  
+        .introduction {
+          font-size: 1.5rem;
+        }
+  
+        .hello h2 {
+          font-size: 3rem;
+        }
+  
+        .skills h2 {
+          font-size: 3rem;
+        }
+  
+        .design-image-1, .design-image-2, .design-image-3 {
+          width: 260px;
+          padding: 2rem;
+        }
+  
+        .skills h3 {
+          font-size: 1.1rem;
+        }
+  
+        .skills p {
+          font-size: 1rem;
+        }      
+      }
+  
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+  
+        .headings h2 {
+          font-size: 3rem;
+          padding: 10px 60px;
+        }
+  
+        .purple_curve {
+          width:90rem;
+          height: 78rem;
+          left: -1rem;
+          top: -25rem;
+          rotate: 45deg;           
+        }
+  
+        .hello {
+          top: 55rem;
+        }
+  
+        .skills {
+          top: 105rem;
+        }
+  
+        .contact {
+          top: 190rem;
+        }
+  
+        .profile-pic {
+          width:25%;
+          left:37.5%;
+        }
+  
+        .design-image-1, .design-image-2, .design-image-3 {
+          width: 300px;
+          padding: 3rem;
+        }
+      }
+  
+      /* Extra large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+  
+        .headings h2 {
+          font-size: 2rem;
+          padding: 10px;
+        }
+  
+        .purple_curve {
+          width: 200rem;
+          height: 78rem;
+          left: -30rem;
+          top: -35rem;
+          rotate: 20deg; 
+          display: inline-block;          
+        }
+  
+        .hello {
+          top: 45rem;
+        }
+  
+        .hello h2, .introduction {
+          top: 25rem;
+          padding: 1rem 15rem;      
+        }
+  
+        .hello h2 {
+          padding-top: 10rem;
+        }
+  
+        .skills {
+          top: 120rem;
+        }
+  
+        .contact {
+          top: 210rem;
+        }
+  
+        .profile-pic {
+          width:25%;
+          left:37.5%;
+        }
+  
+        .hello h2 {
+          font-size: 3rem;
+        }
+  
+        .skills h2 {
+          font-size: 3.5rem;
+          margin-top: 1rem;
+        }
+  
+        .design-image-1, .design-image-2, .design-image-3 {
+          width: 400px;
+          padding-left: 20%;
+        }
+  
+        .skills h3 {
+          font-size: 2rem;
+        }
+  
+        .skills p {
+          font-size: 1rem;
+        }
+  
+        .skills {
+          width:100%;
+          top:100rem;
+          display: grid;
+          gap:1%;
+          grid-template-columns: 45% 45%;
+          grid-template-rows: 200px 500px 500px 500px;   
+        }     
+      }       
+      
+      @media (min-width: 2300px) {
+  
+      .purple_curve {
+        display: none;        
+      }
+    }
